@@ -6,15 +6,15 @@
     <title>Atom9 Electronics | Leading Electronics Distribution in Delhi</title>
     <style>
         :root {
-            --color-primary: #0066cc;
-            --color-primary-dark: #004c99;
-            --color-primary-light: #3385d6;
-            --color-secondary: #00a86b;
-            --color-text: #1a1a1a;
-            --color-text-light: #666;
+            --color-primary: #1a3a4a;
+            --color-primary-dark: #0f2a38;
+            --color-primary-light: #4da6c4;
+            --color-secondary: #e8f4f8;
+            --color-text: #ffffff;
+            --color-text-light: #b3d9e8;
             --color-bg: #ffffff;
             --color-bg-light: #f8f9fa;
-            --color-bg-dark: #1a1a1a;
+            --color-bg-dark: #0a1a2e;
             --color-border: #e0e0e0;
             --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,7 +70,6 @@
         .logo-icon {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -78,6 +77,10 @@
             color: white;
             font-weight: 900;
             font-size: 1.2rem;
+            background-image: url("/like_card_logos_webp/atom9_logo.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .nav-links {
@@ -89,7 +92,7 @@
 
         .nav-links a {
             text-decoration: none;
-            color: var(--color-text);
+            color: var(--color-primary);
             font-weight: 500;
             transition: var(--transition);
             position: relative;
@@ -145,7 +148,7 @@
         /* Hero Section */
         .hero {
             margin-top: 80px;
-            background: linear-gradient(135deg, #0066cc 0%, #004c99 100%);
+            background: linear-gradient(135deg, #00a8cc 0%, #007a94 100%);
             color: white;
             padding: 8rem 2rem;
             position: relative;
@@ -251,7 +254,7 @@
 
         .stat-label {
             font-size: 1.1rem;
-            color: var(--color-text-light);
+            color: #4a4a4a;
             font-weight: 500;
         }
 
@@ -270,12 +273,12 @@
         .section-header h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            color: var(--color-text);
+            color: var(--color-primary);
         }
 
         .section-header p {
             font-size: 1.2rem;
-            color: var(--color-text-light);
+            color: #555555;
         }
 
         .services-grid {
@@ -315,11 +318,11 @@
         .service-card h3 {
             font-size: 1.4rem;
             margin-bottom: 1rem;
-            color: var(--color-text);
+            color: var(--color-primary);
         }
 
         .service-card p {
-            color: var(--color-text-light);
+            color: #4a4a4a;
             line-height: 1.8;
         }
 
@@ -368,11 +371,11 @@
         .product-info h3 {
             font-size: 1.3rem;
             margin-bottom: 0.8rem;
-            color: var(--color-text);
+            color: var(--color-primary);
         }
 
         .product-info p {
-            color: var(--color-text-light);
+            color: #555555;
             margin-bottom: 1.5rem;
             font-size: 0.95rem;
         }
@@ -395,12 +398,12 @@
         .about-content h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
-            color: var(--color-text);
+            color: var(--color-primary);
         }
 
         .about-content p {
             font-size: 1.1rem;
-            color: var(--color-text-light);
+            color: #555555;
             margin-bottom: 1.5rem;
             line-height: 1.8;
         }
@@ -476,6 +479,14 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         }
 
+        .cert-card h3 {
+            color: var(--color-primary);
+        }
+
+        .cert-card p {
+            color: #555555;
+        }
+
         .cert-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
@@ -529,7 +540,7 @@
 
         .job-title {
             font-size: 1.5rem;
-            color: var(--color-text);
+            color: var(--color-primary);
             margin-bottom: 0.5rem;
         }
 
@@ -544,11 +555,11 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            color: var(--color-text-light);
+            color: #666666;
         }
 
         .job-description {
-            color: var(--color-text-light);
+            color: #555555;
             line-height: 1.8;
             margin-bottom: 1.5rem;
         }
@@ -881,6 +892,11 @@
             text-align: center;
             transition: var(--transition);
             border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
         }
 
         .brand-card:hover {
@@ -890,13 +906,14 @@
         }
 
         .brand-logo {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 0;
         }
 
         .brand-name {
-            font-weight: 600;
-            color: var(--color-text);
+            display: none;
         }
     </style>
 </head>
@@ -933,7 +950,7 @@
                 <h1>Powering Innovation<br>Through Excellence</h1>
                 <p class="hero-subtitle">A leading global electronics component distributor, delivering quality products and exceptional service to customers worldwide</p>
                 <div class="hero-cta">
-                    <a href="#contact" onclick="showPage('contact')" class="btn btn-primary">Enquiry Now</a>
+                    <a href="#contact" onclick="showPage('contact')" class="btn btn-primary">Enquiry</a>
                     <a href="#about" onclick="showPage('about')" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
@@ -987,7 +1004,7 @@
             </div>
             <div class="products-grid">
                 <div class="product-card">
-                    <div class="product-image">📱</div>
+                    <div class="product-image">🔌</div>
                     <div class="product-info">
                         <h3>Passive Components</h3>
                         <p>Resistors, capacitors, inductors from leading manufacturers with full traceability and quality assurance.</p>
@@ -1011,7 +1028,7 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">🔗</div>
+                    <div class="product-image">📡</div>
                     <div class="product-info">
                         <h3>Connectors & Cables</h3>
                         <p>Industrial-grade connectors, cables, and interconnect solutions for reliable connections.</p>
@@ -1028,36 +1045,36 @@
             <div class="about-container">
                 <div class="about-content">
                     <h2>About Atom9 Electronics</h2>
-                    <p>As a leading electronics component distributor based in Delhi, India, Atom9 Electronics sources components from across the world, utilizing our purchasing hub in Asia and global distribution network. We work with our network of suppliers to help customers manage market conditions, continue to meet their commitments, and grow their businesses.</p>
+                    <p>As a leading electronics component distributor based in Delhi, Atom9 Electronics sources components from across the world, utilizing our purchasing hub in Asia and global distribution network. We work with our network of suppliers to help customers manage market conditions, continue to meet their commitments, and grow their businesses.</p>
                     <p>We understand the importance of quality supply, which is why it is an integral part of our business. We add our own bespoke quality processes to ensure that our customers can always be confident in the integrity of the supply chain.</p>
                     <p>Being independent, we can be much more flexible in our approach and our ability to make decisions on sourcing, financing, and stocking to prevent problems in our customers' supply chains. Our leadership and management teams are hands-on and responsive, and the entire Atom9 team is focused and empowered to deliver a personal service to meet customer requirements.</p>
                     <div class="about-features">
                         <div class="feature-item">
                             <div class="feature-icon">✓</div>
                             <div>
-                                <strong>ISO 9001:2015 Certified</strong>
-                                <p style="margin-top: 0.3rem; color: var(--color-text-light); font-size: 0.95rem;">Quality management standards</p>
+                                <strong style="color: #1a3a4a;">ISO 9001:2015 Certified</strong>
+                                <p style="margin-top: 0.3rem; color: #555555; font-size: 0.95rem;">Quality management standards</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="feature-icon">✓</div>
                             <div>
-                                <strong>Global Network</strong>
-                                <p style="margin-top: 0.3rem; color: var(--color-text-light); font-size: 0.95rem;">Worldwide sourcing capabilities</p>
+                                <strong style="color: #1a3a4a;">Global Network</strong>
+                                <p style="margin-top: 0.3rem; color: #555555; font-size: 0.95rem;">Worldwide sourcing capabilities</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="feature-icon">✓</div>
                             <div>
-                                <strong>Quality Assurance</strong>
-                                <p style="margin-top: 0.3rem; color: var(--color-text-light); font-size: 0.95rem;">Rigorous testing protocols</p>
+                                <strong style="color: #1a3a4a;">Quality Assurance</strong>
+                                <p style="margin-top: 0.3rem; color: #555555; font-size: 0.95rem;">Rigorous testing protocols</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="feature-icon">✓</div>
                             <div>
-                                <strong>Expert Team</strong>
-                                <p style="margin-top: 0.3rem; color: var(--color-text-light); font-size: 0.95rem;">Experienced professionals</p>
+                                <strong style="color: #1a3a4a;">Expert Team</strong>
+                                <p style="margin-top: 0.3rem; color: #555555; font-size: 0.95rem;">Experienced professionals</p>
                             </div>
                         </div>
                     </div>
@@ -1067,9 +1084,9 @@
         </section>
 
         <section class="services">
-            <div class="section-header">
+            <div class="section-header" style="color: var(--color-primary);">
                 <h2>Why Choose Atom9 Electronics</h2>
-                <p>Comprehensive solutions backed by expertise and commitment</p>
+                <p style="color: #555555;">Comprehensive solutions backed by expertise and commitment</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
@@ -1280,52 +1297,85 @@
             </div>
             <div class="brands-grid">
                 <div class="brand-card">
-                    <div class="brand-logo">📟</div>
-                    <div class="brand-name">Texas Instruments</div>
+                    <img src="like_card_logos_webp/bourns.webp" alt="Bourns" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">💾</div>
-                    <div class="brand-name">Microchip Technology</div>
+                    <img src="like_card_logos_webp/t_broadcom.webp" alt="Broadcom" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">⚡</div>
-                    <div class="brand-name">STMicroelectronics</div>
+                    <img src="like_card_logos_webp/diodes.webp" alt="Diodes" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">🔌</div>
-                    <div class="brand-name">NXP Semiconductors</div>
+                    <img src="like_card_logos_webp/everlight.webp" alt="Everlight" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">🎯</div>
-                    <div class="brand-name">Infineon Technologies</div>
+                    <img src="like_card_logos_webp/infineon.webp" alt="Infineon" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">📡</div>
-                    <div class="brand-name">Analog Devices</div>
+                    <img src="like_card_logos_webp/kemet.webp" alt="KEMET" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">🔋</div>
-                    <div class="brand-name">Maxim Integrated</div>
+                    <img src="like_card_logos_webp/littelfuse.webp" alt="Littelfuse" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">💡</div>
-                    <div class="brand-name">ON Semiconductor</div>
+                    <img src="like_card_logos_webp/molex.webp" alt="Molex" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">🌐</div>
-                    <div class="brand-name">Renesas Electronics</div>
+                    <img src="like_card_logos_webp/murata.webp" alt="Murata" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">⚙️</div>
-                    <div class="brand-name">Vishay Intertechnology</div>
+                    <img src="like_card_logos_webp/nexperia.webp" alt="Nexperia" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">🔬</div>
-                    <div class="brand-name">Murata Manufacturing</div>
+                    <img src="like_card_logos_webp/nichicon.webp" alt="Nichicon" class="brand-logo">
                 </div>
                 <div class="brand-card">
-                    <div class="brand-logo">🎛️</div>
-                    <div class="brand-name">TE Connectivity</div>
+                    <img src="like_card_logos_webp/onsemi.webp" alt="ON Semiconductor" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/panasonic.webp" alt="Panasonic" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/Qualcomm.webp" alt="Qualcomm" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/renesas.webp" alt="Renesas" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/stmicroelectronics.webp" alt="STMicroelectronics" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/TI.webp" alt="Texas Instruments" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/toshiba.webp" alt="Toshiba" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/tdk.webp" alt="TDK" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/te_connectivity.webp" alt="TE Connectivity" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/vishay.webp" alt="Vishay" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/winbond.webp" alt="Winbond" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/Wurth-Electronics.webp" alt="Würth Elektronik" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/yageo.webp" alt="Yageo" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/nxp.webp" alt="NXP" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/microchip.webp" alt="Microchip" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="like_card_logos_webp/mediatek.webp" alt="MediaTek" class="brand-logo">
                 </div>
             </div>
         </section>
@@ -1582,15 +1632,15 @@
                             <div>
                                 <strong>Our Location</strong><br>
                                 Atom9 Electronics LLP<br>
-                                Delhi, India
+                                9-A, Vasundhara Enclave, Delhi-110096
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📧</div>
                             <div>
                                 <strong>Email Us</strong><br>
-                                sales@atom9electronics.com<br>
-                                purchase@atom9electronics.com
+                                info@atom9electronics.com<br>
+                                sales@atom9electronics.com
                             </div>
                         </div>
                         <div class="contact-item">
@@ -1598,7 +1648,7 @@
                             <div>
                                 <strong>Call Us</strong><br>
                                 +91-11-XXXX-XXXX<br>
-                                Mon-Fri: 8:00 AM - 6:00 PM
+                                Mon-Sat: 9:00 AM - 6:00 PM
                             </div>
                         </div>
                     </div>
@@ -1669,25 +1719,24 @@
             <div class="footer-links">
                 <h4>Location</h4>
                 <ul>
-                    <li>Delhi, India</li>
-                    <li>sales@atom9electronics.com</li>
-                    <li>purchase@atom9electronics.com</li>
+                    <li>9-A, Vasundhara Enclave, Delhi-110096</li>
+                    <li>info@atom9electronics.com</li>
                     <li>+91-11-XXXX-XXXX</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/aman-verma-3a391b72/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
-                <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-icon" title="X (Twitter)">
+                <a href="https://www.linkedin.com/in/aman-verma-3a391b72/" target="_blank" rel="noopener noreferrer" class="social-icon" title="X (Twitter)">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
-                <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">
+                <a href="https://www.linkedin.com/in/aman-verma-3a391b72/" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                 </a>
-                <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-icon" title="Facebook">
+                <a href="https://www.linkedin.com/in/aman-verma-3a391b72/" target="_blank" rel="noopener noreferrer" class="social-icon" title="Facebook">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
                 </a>
             </div>
@@ -1766,7 +1815,7 @@
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({
-                        access_key: 'd7b9bb68-20d2-4cd2-b731-556626f40f63', // You need to register at https://web3forms.com to get your free access key
+                        access_key: 'YOUR_WEB3FORMS_ACCESS_KEY', // You need to register at https://web3forms.com to get your free access key
                         subject: `New Contact Form Submission - ${emailData.subject}`,
                         from_name: 'Atom9 Electronics Website',
                         email: 'sales@atom9electronics.com,purchase@atom9electronics.com', // Both emails will receive
@@ -1849,4 +1898,3 @@ ${emailData.message}
     </script>
 </body>
 </html>
-
