@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <title>Atom9 Electronics | Leading Electronics Distribution in Delhi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/a9-zoom-transparent.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/a9-zoom-transparent-128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="images/a9-zoom-transparent-256.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/a9-zoom-transparent-180.png">
+       
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">        
+            <a href="index.html" class="logo">
+                <img class="logo-icon" src="images/logo.png" alt="Atom9 Electronics">
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="linecard.html">Line Card</a></li>
+                <li><a href="certifications.html">Certificates</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html" class="cta-nav">Contact Us</a></li>
+            </ul>
+            <div class="mobile-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section class="hero">
+        <div class="hero-content">
+          <h1>Powering Innovation<br>Through Excellence</h1>
+          <p class="hero-subtitle">
+            A leading global electronics component distributor, delivering quality
+            products and exceptional service to customers worldwide
+          </p>
+    
+          <div class="hero-cta">
+            <a href="contact.html" class="btn btn-primary">Enquiry</a>
+            <a href="about_us.html" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+        <!-- Services Preview -->
+        <section class="services">
+            <div class="section-header">
+                <h2>Our Core Competencies</h2>
+                <p>Comprehensive electronics distribution services tailored to meet your business requirements</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Component Sourcing</h3>
+                    <p>Global sourcing network utilizing our purchasing hubs across Asia and international distribution channels to meet your requirements with quality components.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>BOM Support</h3>
+                    <p>Comprehensive Bill of Materials (BOM) assistance for your projects. Our team analyzes your BOM requirements, sources all components, provides pricing and lead times, and offers alternative suggestions to optimize costs and availability.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Obsolescence Management</h3>
+                    <p>Expert solutions for managing obsolete components, ensuring your operations continue smoothly with alternative solutions and extended lifecycle support.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Quality Assurance</h3>
+                    <p>ISO 9001:2015 certified processes ensuring complete traceability, incoming/outgoing material inspection, and rigorous quality control procedures.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3>Logistics Support</h3>
+                    <p>Experienced logistics team providing reliable services with strict guidelines to prevent delays, maintaining complete end-to-end traceability of shipments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Vendor Consolidation</h3>
+                    <p>Single point of contact for all your procurement needs, simplifying multi-vendor transactions and providing consolidated delivery within your budget.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Preview -->
+        <section class="products">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>High-quality electronic components from leading manufacturers worldwide</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">📟</div>
+                    <div class="product-info">
+                        <h3>Active & Passive Components</h3>
+                        <p>Resistors, capacitors, inductors from leading manufacturers with full traceability and quality assurance.</p>
+                        <button class="btn btn-primary" onclick="showPage('contact')">Enquiry Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🔲</div>
+                    <div class="product-info">
+                        <h3>Semiconductors & ICs</h3>
+                        <p>Comprehensive range of ICs, microcontrollers, and processors for diverse applications.</p>
+                        <button class="btn btn-primary" onclick="showPage('contact')">Enquiry Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">📡</div>
+                    <div class="product-info">
+                        <h3>Sensors & Transducers</h3>
+                        <p>Temperature, pressure, motion, proximity sensors and transducers for industrial and consumer applications.</p>
+                        <button class="btn btn-primary" onclick="showPage('contact')">Enquiry Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🔗</div>
+                    <div class="product-info">
+                        <h3>Connectors & Cables</h3>
+                        <p>Industrial-grade connectors, cables, and interconnect solutions for reliable connections.</p>
+                        <button class="btn btn-primary" onclick="showPage('contact')">Enquiry Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Atom9 Electronics Logo">
+                </div>
+                
+                <p>A leading global electronics component distributor, committed to delivering quality products and exceptional service to customers worldwide.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="linecard.html">Line Card</a></li>
+                    <li><a href="certifications.html">Certificates</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links contact-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 9-A, Vasundhara Enclave, Delhi-110096</li>
+                    <li>📨 purchase@atom9electronics.com</li>
+                    <li>📨 sales@atom9electronics.com</li>
+                    <li>📞 +91-9811133094</li>
+                </ul>
+            </div>            
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/aman-verma-3a391b72/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/aman-verma-3a391b72/" target="_blank" rel="noopener noreferrer" class="social-icon" title="X (Twitter)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/aman-verma-3a391b72/" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/aman-verma-3a391b72/" target="_blank" rel="noopener noreferrer" class="social-icon" title="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                </a>
+            </div>
+            <div class="footer-bottom-text">
+                <p>&copy; 2026 Atom9 Electronics LLP. All rights reserved. | ISO 9001:2015 Certified</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Page navigation
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+            }
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Close mobile menu if open
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.remove('active');
+        }
+
+        // Form submission
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const submitBtn = form.querySelector('.btn-submit');
+            const originalBtnText = submitBtn.textContent;
+            
+            // Disable button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            
+            const formData = new FormData(form);
+            
+            // Prepare email data
+            const emailData = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone') || 'Not provided',
+                company: formData.get('company'),
+                subject: formData.get('subject'),
+                message: formData.get('message')
+            };
+            
+            try {
+                // Using Web3Forms service (free and works with any email)
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        access_key: 'YOUR_WEB3FORMS_ACCESS_KEY', // You need to register at https://web3forms.com to get your free access key
+                        subject: `New Contact Form Submission - ${emailData.subject}`,
+                        from_name: 'Atom9 Electronics Website',
+                        email: 'sales@atom9electronics.com,purchase@atom9electronics.com', // Both emails will receive
+                        message: `
+Name: ${emailData.name}
+Email: ${emailData.email}
+Phone: ${emailData.phone}
+Company: ${emailData.company}
+Subject: ${emailData.subject}
+
+Message:
+${emailData.message}
+                        `.trim()
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok && result.success) {
+                    alert('Thank you for your message! We will get back to you shortly at both sales@atom9electronics.com and purchase@atom9electronics.com.');
+                    form.reset();
+                } else {
+                    throw new Error(result.message || 'Submission failed');
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                alert('Sorry, there was an error sending your message. Please try again or email us directly at sales@atom9electronics.com or purchase@atom9electronics.com');
+            } finally {
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+            }
+        }
+
+        // Apply now function
+        function showContactForm(position) {
+            showPage('contact');
+            setTimeout(() => {
+                const subjectField = document.getElementById('subject');
+                subjectField.value = `Application for ${position}`;
+                subjectField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 300);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.service-card, .product-card, .job-card, .cert-card, .brand-card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
